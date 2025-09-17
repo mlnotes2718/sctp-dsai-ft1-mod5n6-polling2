@@ -1,0 +1,16 @@
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',
+        filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h2>LLAMA chatbot via groq</h2>
+        <form action="/llama_reply" method="post">
+            <p>Please enter your query</p>
+            <input type="text" name="q">
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+</body>

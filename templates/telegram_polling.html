@@ -1,0 +1,22 @@
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',
+        filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Telegram Bot Control (Polling)</h2>
+        <h3>Telegram Bot Name : <a href="https://web.telegram.org/a/#8377771636" target="_blank">@sctp_polling_TT</a></h3>
+        <h3>Telegram Status : {{r}}</h3>
+        <form action="/start_polling" method="post">
+            <input type="submit" value="START POLLING">
+        </form>
+        <form action="/stop_polling" method="post">
+            <input type="submit" value="STOP POLLING">
+        </form>
+        <form action="/main" method="post">
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
